@@ -2,8 +2,8 @@
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 
 Name:           urlwatch
-Version:        2.19
-Release:        2.git%{shortcommit}%{?dist}
+Version:        2.21
+Release:        1.git%{shortcommit}%{?dist}
 Summary:        A tool for monitoring webpages for updates
 
 License:        BSD
