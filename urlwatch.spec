@@ -1,9 +1,9 @@
-%global commit dfc5751bf3e42e0718b60c9aa0f5188f6c93c6bf
+%global commit 839ef2f35770b143165e52e2c1a841cd3fefe5f8
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 
 Name:           urlwatch
 Version:        2.21
-Release:        1.git%{shortcommit}%{?dist}
+Release:        2.git%{shortcommit}%{?dist}
 Summary:        A tool for monitoring webpages for updates
 
 License:        BSD
@@ -60,6 +60,11 @@ chmod a+x %{buildroot}%{python3_sitelib}/%{name}/handler.py
 %{python3_sitelib}/%{name}*.egg-info
 
 %changelog
+* Sat Nov 28 2020 Chris Roadfeldt <chris@roadfeldt.com> - 2.21-2.git839ef2f
+- Update source to commit git839ef2f
+- Added support for basic Discord webhook integration.
+- Fixed release tag in changelog
+
 * Wed Nov 25 2020 Chris Roadfeldt <chris@roadfeldt.com> - 2.19.2.git3ba2eb7
 - Update source to commit git3ba2eb7
 
