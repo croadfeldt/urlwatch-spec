@@ -1,4 +1,4 @@
-%global commit 839ef2f35770b143165e52e2c1a841cd3fefe5f8
+%global commit 29d5e97ce4b10af9a9deaafa39481a80f8ebd76b
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 
 Name:           urlwatch
@@ -60,6 +60,11 @@ chmod a+x %{buildroot}%{python3_sitelib}/%{name}/handler.py
 %{python3_sitelib}/%{name}*.egg-info
 
 %changelog
+* Fri Dec 12 2020 Chris Roadfeldt <chris@roadfeldt.com> - 2.21-3.git29d5e97
+- Update source to commit git29d5e97
+- Clean up documentation for Discord support.
+- Add Mattermost webhook integration.
+
 * Sat Nov 28 2020 Chris Roadfeldt <chris@roadfeldt.com> - 2.21-2.git839ef2f
 - Update source to commit git839ef2f
 - Added support for basic Discord webhook integration.
