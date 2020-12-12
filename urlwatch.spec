@@ -3,7 +3,7 @@
 
 Name:           urlwatch
 Version:        2.21
-Release:        2.git%{shortcommit}%{?dist}
+Release:        3.git%{shortcommit}%{?dist}
 Summary:        A tool for monitoring webpages for updates
 
 License:        BSD
