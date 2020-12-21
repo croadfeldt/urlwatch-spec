@@ -1,9 +1,9 @@
-%global commit 29d5e97ce4b10af9a9deaafa39481a80f8ebd76b
+%global commit 4eb9391829267f42e669988a91cff6cbe112d067
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 
 Name:           urlwatch
-Version:        2.21
-Release:        3.git%{shortcommit}%{?dist}
+Version:        2.22
+Release:        1.git%{shortcommit}%{?dist}
 Summary:        A tool for monitoring webpages for updates
 
 License:        BSD
@@ -19,6 +19,7 @@ Requires:       python3-requests
 Requires:       python3-keyring
 Requires:       python3-minidb
 Requires:       python3-PyYAML
+Requires:       python3 >= 3.6
 
 %description
 This script is intended to help you watch URLs and get notified (via
@@ -60,6 +61,11 @@ chmod a+x %{buildroot}%{python3_sitelib}/%{name}/handler.py
 %{python3_sitelib}/%{name}*.egg-info
 
 %changelog
+* Mon Dec 21 2020 Chris Roadfeldt <chris@roadfeldt.com> - 2.22-1.git4eb9391
+- Updated to urlwatch 2.22
+- Requires at least Python 3.6
+- Code cleanups
+
 * Fri Dec 12 2020 Chris Roadfeldt <chris@roadfeldt.com> - 2.21-3.git29d5e97
 - Update source to commit git29d5e97
 - Clean up documentation for Discord support.
