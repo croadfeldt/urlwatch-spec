@@ -1,8 +1,8 @@
-%global commit 4eb9391829267f42e669988a91cff6cbe112d067
+%global commit 942c24b17d496646aeb42af0b9d931877ca864bb
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 
 Name:           urlwatch
-Version:        2.22
+Version:        2.24
 Release:        1.git%{shortcommit}%{?dist}
 Summary:        A tool for monitoring webpages for updates
 
@@ -61,6 +61,9 @@ chmod a+x %{buildroot}%{python3_sitelib}/%{name}/handler.py
 %{python3_sitelib}/%{name}*.egg-info
 
 %changelog
+* Tue Jan 11 2022 Chris Roadfeldt <chris@roadfeldt.com> - 2.24-1.git942c24b
+- Update to urlwatch 2.24
+
 * Mon Dec 21 2020 Chris Roadfeldt <chris@roadfeldt.com> - 2.22-1.git4eb9391
 - Updated to urlwatch 2.22
 - Requires at least Python 3.6
